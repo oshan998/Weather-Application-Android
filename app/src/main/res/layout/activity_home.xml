@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="40dp"
+    android:padding="10dp"
+    android:weightSum="3">
+
+    <EditText
+        android:id="@+id/textField"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.5"
+        android:background="#fff"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+         />
+
+    <ImageView
+        android:id="@+id/search"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:src="@drawable/search"
+        />
+
+</LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Temperature"
+            android:textColor="#000"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:id="@+id/tempText"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Feels like"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:id="@+id/descText"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Humidity"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:id="@+id/humidityText"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Min temp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:id="@+id/mintempText"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Max temp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:id="@+id/maxtempText"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pressure"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:id="@+id/pressureText"/>
+
+
+
+    </LinearLayout>>
+
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="150dp"
+        android:text="Logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.248"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintVertical_bias="1.0" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
